@@ -2,12 +2,10 @@ abortion
 accessibility	
 Accessible	
 activism	
-activists	
+activist	
 advocacy	
 advocate	
-advocates	
 affirmative action	
-affirmative action programs	
 affirming care	
 affordable home	
 affordable housing	
@@ -28,8 +26,7 @@ amab
 at risk	
 autism	
 aviation fuel	
-barrier	
-barriers	
+barrier
 belong	
 bias	
 biased	
@@ -68,7 +65,6 @@ climate change
 climate consulting	
 climate crisis	
 climate model	
-climate models	
 climate resilience	
 climate risk	
 climate science	
@@ -198,9 +194,8 @@ housing efficiency
 hydrogen vehicle	
 identity	
 ideology	
-immigrants	
+immigration	
 implicit bias	
-implicit biases	
 inclusion	
 inclusive	
 inclusive leadership	
@@ -242,7 +237,7 @@ membrane filtration
 men who have sex with men	
 mental health	
 methane emissions	
-microplastics	
+microplastic
 migrant	
 minorities	
 minority	
@@ -263,7 +258,7 @@ nonpoint source pollution
 nuclear energy	
 nuclear power	
 obesity	
-opioids	
+opioid
 oppression	
 oppressive	
 orientation	
@@ -286,15 +281,12 @@ pollution remediation
 prefabricated housing	
 pregnant people	
 pregnant person	
-pregnant persons	
 prejudice	
 privilege	
-privileges	
 promote	
 promote diversity	
 promoting diversity	
 pronoun	
-pronouns	
 prostitute	
 pyrolysis	
 QT	
@@ -317,7 +309,7 @@ segregation
 self-assessed	
 sense of belonging	
 sex	
-sexual preferences	
+sexual preference
 sexuality	
 social justice	
 social vulnerability	
@@ -332,7 +324,6 @@ special populations
 stem cell research
 fetal tissue research	
 stereotype	
-stereotypes	
 subsidized housing	
 sustainability
 sustainable	
@@ -348,8 +339,7 @@ topics that have received recent attention from Congress
 topics that have received widespread or critical media attention	
 trans	
 transexual	
-transexualism	
-transexuals	
+transexualism
 transgender	
 transgender military personnel	
 transgender people	
