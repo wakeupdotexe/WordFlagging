@@ -67,7 +67,8 @@ def upperSub(full, start, end):
     middle = full[start:end]
 
     #capitalizes term at full[start:end]
-    middle = middle.upper()
+    print(middle)
+    middle = "<b>" + middle.upper() + "</b>"
     new = beginning + middle + ending
 
     #returns full string with capitalized substring
@@ -101,7 +102,7 @@ def findAll(prop, toFind):
 
 def fillNothing(fill, end):
     newProp = ''
-    for i in range(end):
+    for i in range(end+7):
         newProp = newProp + '-'
     newProp = newProp + fill[end:len(fill)]
     return newProp
@@ -116,7 +117,7 @@ def save_prop(prop):
     if len(flaggedWords) > 0:
         for i in range(len(flaggedWords)):
             text = '' + flaggedWords[i][0] + " (" + str(flaggedWords[i][1]) + ")"
-            x = ui.link(text, 'firefox.com')
+            x = ui.button(text, on_click=lambda: scroller.scroll_to(pixels=1194.5)).props('flat unelevated color-none')
             x.move(card)
     else:
         y = ui.label("No words flagged.")
@@ -127,12 +128,24 @@ def clickActions():
     card.clear()
     save_prop(textbox_I.value)
 
+ui.add_css('''
+    .nicegui-editor b {
+        color: red;
+        text-decoration: none;
+    }
+''')
+
+
 with ui.row(wrap=True):
     with ui.column(align_items='end'):
-        with ui.scroll_area().classes('size-128 border'):
-            textbox_I = ui.editor(placeholder='Proposal').mark()
-            textbox_I.style('width: 100%') 
-        testbutton = ui.button('Test Proposal', icon='check', on_click=lambda: clickActions())
+        scroller = ui.scroll_area().classes('size-128 border')
+        with scroller:
+            textbox_I = ui.editor(placeholder='Proposal')
+            textbox_I._props.update(toolbar=[
+                ['left', 'center', 'right', 'justify'],
+                ['italic', 'underline', 'strike'],
+            ])
+        testbutton = ui.button('Test Proposal', icon='check', on_click=lambda: clickActions()).props(f'color={"negative"}')
     #with ui.scroll_area().classes('width-64 height-128'):
     card = ui.card()
 ui.run()
