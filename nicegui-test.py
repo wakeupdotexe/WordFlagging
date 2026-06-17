@@ -60,15 +60,20 @@ def findBannedWords(bannedWords, prop):
     #and the proposal with all flagged terms capitalized
     return flaggedWords, newProp
 
+endCharacters = [' ', ',', '.', '?', '!', '(', ')', '[', ']', '/', '"', "'", '<', '>', '=']
 
-def upperSub(full, start, end):
+def boldSub(full, start, end):
+    while full[start] not in endCharacters:
+        start -=1
+    while full[end] not in endCharacters:
+        end += 1
+
     beginning = full[0:start]
     ending = full[end:len(full)]
     middle = full[start:end]
 
     #capitalizes term at full[start:end]
-    print(middle)
-    middle = "<b>" + middle.upper() + "</b>"
+    middle = "<c>" + middle + "</c>"
     new = beginning + middle + ending
 
     #returns full string with capitalized substring
@@ -86,10 +91,12 @@ def findAll(prop, toFind):
     #loops until there are no more instances of toFind in the proposal
     while i != -1:
 
+
+
         x += 1
 
         #capitalizes toFind
-        newProp = upperSub(newProp, i, i+len(toFind))
+        newProp = boldSub(newProp, i, i+len(toFind))
 
         #erases documented instances of toFind temporarily
         upperProp = fillNothing(upperProp, i+len(toFind))
@@ -129,7 +136,8 @@ def clickActions():
     save_prop(textbox_I.value)
 
 ui.add_css('''
-    .nicegui-editor b {
+    .nicegui-editor c {
+        font-weight: bold;
         color: red;
         text-decoration: none;
     }
