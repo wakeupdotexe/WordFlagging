@@ -50,6 +50,13 @@ def findBannedWords(bannedWords, prop):
                 newProp, count2 = findAll(newProp, word2)
                 flaggedWords.append((word1, count1))
                 flaggedWords.append((word2, count2))
+        elif '+' in word:
+            temp = word.strip('+')
+            i = upperProp.find(temp)
+            if i != -1:
+                newProp, count = specFind(newProp, temp)
+                if count > 0:
+                    flaggedWords.append((temp, count))
         else:
             i = upperProp.find(word)
             if i != -1:
@@ -61,6 +68,25 @@ def findBannedWords(bannedWords, prop):
     return flaggedWords, newProp
 
 endCharacters = [' ', ',', '.', '?', '!', '(', ')', '[', ']', '/', '"', "'", '<', '>', '=']
+
+def specFind(prop, toFind):
+    newProp = prop
+    upperProp = prop.upper()
+    i = upperProp.find(toFind)
+    x = 0
+
+    while i != -1:
+        start = upperProp[i-1:i]
+        end = upperProp[i+len(toFind):i+len(toFind)+1]
+        if start in endCharacters and end in endCharacters:
+            x += 1
+            newProp = boldSub(newProp, i, i+len(toFind))
+         #erases documented instances of toFind temporarily
+        upperProp = fillNothing(upperProp, i+len(toFind))
+        #next instance of toFind
+        i = upperProp.find(toFind)
+    return newProp, x
+    
 
 def boldSub(full, start, end):
     while full[start] not in endCharacters:
