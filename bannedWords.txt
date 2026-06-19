@@ -20,9 +20,9 @@ antiracist
 asexual	
 assigned at birth	
 assigned female at birth
-afab	
+afab+	
 assigned male at birth
-amab
+amab+
 at risk	
 autism	
 aviation fuel	
@@ -51,7 +51,7 @@ carbon footprint
 carbon markets	
 carbon pricing	
 carbon sequestration	
-CEC	
+CEC+	
 changing climate	
 chestfeed&people	
 chestfeed&person	
@@ -91,10 +91,10 @@ culturally appropriate
 culturally responsive	
 decarbonization	
 definition	
-DEI	
-DEIA	
-DEIAB	
-DEIJ	
+DEI+	
+DEIA+	
+DEIAB+	
+DEIJ+	
 diesel	
 dietary guidelines
 ultraprocessed foods	
@@ -123,8 +123,8 @@ diversity in the workplace
 diversity, equity, and inclusion	
 diversity efforts
 equity efforts	
-EEJ	
-EJ	
+EEJ+	
+EJ+	
 elderly	
 electric vehicle	
 emissions	
@@ -156,7 +156,7 @@ fluoride
 fostering inclusivity	
 fuel cell	
 gay	
-GBV	
+GBV+	
 gender	
 gender based	
 gender based violence	
@@ -194,7 +194,7 @@ housing efficiency
 hydrogen vehicle	
 identity	
 ideology	
-immigration	
+immigration
 implicit bias	
 inclusion	
 inclusive	
@@ -243,10 +243,10 @@ minorities
 minority	
 minority serving institution	
 most risk	
-MSI	
-msm	
+MSI+	
+msm+	
 multicultural	
-Mx	
+Mx+	
 Native American	
 NCI budget	
 net-zero	
@@ -263,15 +263,15 @@ oppression
 oppressive	
 orientation	
 pansexual	
-PCB	
+PCB+	
 peanut allergies	
 people&uterus	
 people of color	
 people-centered care	
 person-centered	
 person-centered care	
-PFAS	
-PFOA	
+PFAS+	
+PFOA+	
 photovoltaic	
 polarization	
 political	
@@ -308,7 +308,8 @@ sediment remediation
 segregation	
 self-assessed	
 sense of belonging	
-sex	
+sex+	
+sexual
 sexual preference
 sexuality	
 social justice	
@@ -337,7 +338,7 @@ tile drainage
 topics of federal investigations	
 topics that have received recent attention from Congress	
 topics that have received widespread or critical media attention	
-trans	
+trans+	
 transexual	
 transexualism
 transgender	
